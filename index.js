@@ -19,5 +19,5 @@ plusbtn.addEventListener('click',function(){
 // minus button action
 var minusbtn=document.getElementById('minusbtn');
 minusbtn.addEventListener('click',function(){
-    
+   
 })
