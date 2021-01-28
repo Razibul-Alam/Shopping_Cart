@@ -31,4 +31,11 @@ var totalamount=plustext-1219;
 var plustext=document.getElementById('plustext').innerText=totalamount;}
 else{}
     
+}) //
+
+// remove style
+var removebtn=document.getElementById('remove');
+removebtn.addEventListener('click',function(){
+   var cart1=document.getElementById('cart1');
+   cart1.style.display="none";
 })
