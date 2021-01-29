@@ -1,41 +1,32 @@
 // plus button action
 var plusbtn=document.getElementById('plusbtn');
 plusbtn.addEventListener('click',function(){
-    var inputvalue=document.getElementById('inpt').value;
-   inputvalue=parseFloat(inputvalue);
-   var plusplus=inputvalue+1;
-   var inputvalue=document.getElementById('inpt').value=plusplus;
-   var plustext=document.getElementById('plustext').innerText;
-   plustext=parseFloat(plustext);
-   var totalamount=plustext+1219;
-   var plustext=document.getElementById('plustext').innerText=totalamount;
-   
+    var Input=document.getElementById('inpt');
+   inputvalue=parseFloat(Input.value);
+   var newinptvalue=inputvalue+1;
+   Input.value=newinptvalue
+    var totalamount=newinptvalue*1219;
+ var plustext=document.getElementById('plustext').innerText=totalamount;
+   })///
 
-   
-
-   
-})///
 
 // minus button action
 var minusbtn=document.getElementById('minusbtn');
 minusbtn.addEventListener('click',function(){
-    var inputvalue=document.getElementById('inpt').value;
-    inputvalue=parseFloat(inputvalue);
+    var Input=document.getElementById('inpt');
+    inputvalue=parseFloat(Input.value);
 
     if(inputvalue>0){
-var updateinpt=inputvalue-1;
-var inputvalue=document.getElementById('inpt').value=updateinpt;
-var plustext=document.getElementById('plustext').innerText;
-plustext=parseFloat(plustext);
-var totalamount=plustext-1219;
+var newinptvalue =inputvalue-1;
+Input.value=newinptvalue;
+var totalamount=newinptvalue*1219;
 var plustext=document.getElementById('plustext').innerText=totalamount;}
-else{}
-    
+
 }) //
 
-// remove style
-var removebtn=document.getElementById('remove');
-removebtn.addEventListener('click',function(){
-   var cart1=document.getElementById('cart1');
-   cart1.style.display="none";
-})
+// // remove style
+// var removebtn=document.getElementById('remove');
+// removebtn.addEventListener('click',function(){
+//    var cart1=document.getElementById('cart1');
+//    cart1.style.display="none";
+// })
